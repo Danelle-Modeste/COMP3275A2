@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">COMP3275Assignment2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_accelerometer">Accelerometer</string>
+    <string name="title_activity_gyroscope">Gyroscope</string>
+    <string name="title_activity_proximity">Proximity</string>
+    <string name="title_activity_gps">GPS</string>
+    <string name="title_activity_bluetooth">Bluetooth</string>
+    <string name="title_activity_all_stored_locations">AllStoredLocations</string>
+
+    <string-array name="func_list">
+        <item>Accelerometer Sensor</item>
+        <item>Gyroscope Sensor</item>
+        <item>Proximity Sensor</item>
+        <item>GPS Current Location</item>
+        <item>Bluetooth</item>
+        <item>All Stored GPS Locations</item>
+    </string-array>
+</resources>
