@@ -12,4 +12,10 @@
     tools:context="edu.uwi.sta.comp3275assignment2.AllStoredLocations"
     tools:showIn="@layout/activity_all_stored_locations">
 
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gps_list"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
