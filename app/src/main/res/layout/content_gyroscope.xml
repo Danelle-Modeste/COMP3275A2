@@ -26,9 +26,55 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        android:id="@+id/txt_gyro"
+        android:id="@+id/txt_gyro_x"
+        android:layout_marginTop="187dp"
+        android:paddingLeft="40dp"
+        android:layout_toEndOf="@+id/txt1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/txt_gyro_y"
+        android:layout_below="@id/txt_gyro_x"
+        android:paddingLeft="40dp"
+        android:layout_alignStart="@+id/txt_gyro_x"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/txt_gyro_z"
+        android:layout_below="@id/txt_gyro_y"
+        android:paddingLeft="40dp"
+        android:layout_alignStart="@+id/txt_gyro_x"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x:"
+        android:id="@+id/txt1"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="187dp" />
+        android:layout_marginTop="187dp"
+        android:layout_marginLeft="80dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="y:"
+        android:id="@+id/txt2"
+        android:layout_below="@id/txt1"
+        android:layout_alignStart="@+id/txt1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="z:"
+        android:id="@+id/txt3"
+        android:layout_below="@id/txt2"
+        android:layout_alignStart="@+id/txt1"/>
 
 </RelativeLayout>

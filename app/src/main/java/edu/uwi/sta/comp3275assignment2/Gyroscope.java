@@ -4,12 +4,11 @@ import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.TextView;
+
+import edu.uwi.sta.comp3275assignment2.Listeners.SensorListener;
 
 public class Gyroscope extends AppCompatActivity {
     SensorManager sensorManager;
@@ -25,10 +24,15 @@ public class Gyroscope extends AppCompatActivity {
 
         sensorManager =(SensorManager)getSystemService(Context.SENSOR_SERVICE);
         final Sensor gyroSensor = sensorManager.getDefaultSensor((Sensor.TYPE_GYROSCOPE));
-        TextView disp_gyro= (TextView)findViewById(R.id.txt_gyro);
 
-        sensorListener= new SensorListener(getApplicationContext(),disp_gyro);
-        sensorManager.registerListener(sensorListener, gyroSensor, SensorManager.SENSOR_DELAY_NORMAL);
+        TextView disp_gyro_x= (TextView)findViewById(R.id.txt_gyro_x);
+        TextView disp_gyro_y= (TextView)findViewById(R.id.txt_gyro_y);
+        TextView disp_gyro_z= (TextView)findViewById(R.id.txt_gyro_z);
+
+        sensorListener= new SensorListener(getApplicationContext(),disp_gyro_x,disp_gyro_y,disp_gyro_z,3);
+
+        sensorManager.registerListener(sensorListener, gyroSensor, 5);
+       // sensorManager.registerListener(sensorListener, gyroSensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     protected void onDestroy(){

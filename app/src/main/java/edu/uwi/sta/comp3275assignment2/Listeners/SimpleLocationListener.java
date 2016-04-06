@@ -1,4 +1,4 @@
-package edu.uwi.sta.comp3275assignment2;
+package edu.uwi.sta.comp3275assignment2.Listeners;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -8,6 +8,8 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import edu.uwi.sta.comp3275assignment2.GPS;
 
 public class SimpleLocationListener implements LocationListener {
     GPS GPSActivity;

@@ -55,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Latitude"
+        android:text="Latitude:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView"
         android:layout_below="@id/textView2"
@@ -65,7 +65,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Longitude"
+        android:text="Longitude:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView3"
         android:layout_below="@+id/textView"
@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Altitude"
+        android:text="Altitude:"
         android:id="@+id/textView4"
         android:layout_below="@+id/textView3"
         android:layout_alignStart="@+id/textView"/>
